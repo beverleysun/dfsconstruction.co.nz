@@ -87,25 +87,25 @@ header {
 #home-header {
     width: auto;
     min-height: 800px;
-    background-image: url(img/home.jpg);
+    background-image: url(../img/home/home.jpg);
 }
 
 #services-header {
     height: 70%;
     min-height: 750px;
-    background-image: url(img/our-services.jpg);
+    background-image: url(../img/services/our-services.jpg);
 }
 
 #projects-header {
     height: 70%;
     min-height: 750px;
-    background-image: url(img/projects.jpg);
+    background-image: url(../img/projects/projects.jpg);
 }
 
 #contact-header {
     height: 70%;
     min-height: 750px;
-    background-image: url(img/contact.jpg);
+    background-image: url(../img/contact/contact.jpg);
 }
 /*end header bg*/
 
@@ -202,6 +202,7 @@ i:hover {
 #intro.grey {
     padding: 2% 25% 2% 25%;
     flex-direction: column;
+    text-align: center;
 }
 /*end*/
 
@@ -314,7 +315,7 @@ h3 {
 /*contact home*/
 #contact {
     min-height: 550px;
-    background-image: url(img/contact-us.jpg);
+    background-image: url(../img/main/contact-us.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
@@ -427,8 +428,9 @@ h8 {
 }
 
 #current-project-text {
-    margin: 0;
-    text-align: justify;
+    margin: 3% 25% 0 25%;
+    text-align: center;
+    font-size: 125%;
 }
 
 #past-project-images.flex {
@@ -511,12 +513,38 @@ h7 {
     padding: 3%;
 }
 
+.footer-suppliers {
+    display: grid;
+    grid-template-rows: 10% [main-start] 1fr [main-end];
+}
+
+.footer-suppliers-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#suppliers {
+    display: block;
+    margin: 1% auto 0 auto;
+    width: 60%;
+}
+
 #footer-logo {
-    width: 6%;
+    display: block;
+    margin: 20% auto 0 auto;
+    width: 40%;
     min-width: 100px;
-    float: right;
-    height: auto;
-    padding: 4% 4% 0 0;
+}
+
+.footer-second {
+    display: grid;
+    grid-template-columns: 25% [main-start] 1fr [main-end] 15%;
+    margin: 2%;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: 12% [main-start] 1fr [main-end];
 }
 /******************
 *                 *
@@ -558,5 +586,17 @@ h7 {
 
     #specialise-text {
         padding: 9% 5% 12% 7%;
+    }
+
+    .footer-suppliers-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer-suppliers-img {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
