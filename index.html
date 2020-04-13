@@ -61,20 +61,17 @@
             <h4>Explore Our Projects</h4>
         </div>
 
-        <div class="flex">
-            <img src="img/home/current-project.jpg" id="current-project-home" onclick="window.location.href='projects.html#current-project'" />
-
+        <div class="flex" id="projects-home">
+            <div class="flex" id="projects-container">
+                <img src="img/home/current-project.jpg" id="current-project-home" onclick="window.location.href='projects.html#current-project'" />
+                <button type="button" onclick="window.location.href='projects.html#current-project'" id="btn-projects">Current Project</button>
+            </div>
             <div class="long-vl">&nbsp</div>
-
-            <img src="img/home/past-projects.jpg" id="past-projects-home" onclick="window.location.href='projects.html#past-projects'" />
+            <div class="flex" id="projects-container">
+                <img src="img/home/past-projects.jpg" id="past-projects-home" onclick="window.location.href='projects.html#past-projects'" />
+                <button type="button" onclick="window.location.href='projects.html#past-projects'" id="btn-projects">Past Projects</button>
+            </div>
         </div>
-        <br />
-        <div class="flex" id="link-projects-home">
-            <button type="button" onclick="window.location.href='projects.html#current-project'" id="btn-projects">Current Project</button>
-            <button type="button" onclick="window.location.href='projects.html#past-projects'" id="btn-projects">Past Projects</button>
-        </div>
-
-
     </section>
 
     <section id="contact">
