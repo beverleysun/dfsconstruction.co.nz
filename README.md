@@ -1,3 +1,3 @@
 # DFS Construction Website
 
-dfsconstruction.co.nz
+http://dfsconstruction.co.nz
